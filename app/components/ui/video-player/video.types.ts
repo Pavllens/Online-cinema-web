@@ -1,0 +1,11 @@
+export interface IVideoPlayer {
+	videoUrls: string[]
+	title: string
+	slug: string
+}
+
+export interface IVideoElement extends HTMLVideoElement {
+	msRequestFullscreen?: () => void
+	mozRequestFullScreen?: () => void
+	webkitRequestFullscreen?: () => void
+}
